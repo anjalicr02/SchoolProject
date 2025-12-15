@@ -9,4 +9,5 @@ public class SchoolConstants {
     public static String ACTIVE = "active";
     public static String MESSAGE ="message: " ;
     public static String USER_NOT_FOUND = "user not found: " ;
+    public static final String ROLE_TEACHER = "ROLE_TEACHER";
 }
