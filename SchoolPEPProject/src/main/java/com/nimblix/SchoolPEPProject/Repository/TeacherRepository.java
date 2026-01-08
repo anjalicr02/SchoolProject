@@ -7,5 +7,6 @@ import com.nimblix.SchoolPEPProject.Model.Teacher;
 
 @Repository
 public interface TeacherRepository extends JpaRepository<Teacher, Long> {
+	
     Teacher findByEmailId(String emailId);
 }

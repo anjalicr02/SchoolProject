@@ -24,11 +24,12 @@ public class TeacherController {
     private TeacherService teacherService;
 
     @PostMapping("/mark")
-    public ResponseEntity<?> markAttendance(
-            @RequestHeader("Authorization") String authHeader,
+    public ResponseEntity<?> markAttendance(@RequestHeader("Authorization") String authHeader,
             @RequestBody AttendanceRequest request) {
 
         return teacherService.markAttendance(authHeader, request);
+        
+        
     }
 }
 

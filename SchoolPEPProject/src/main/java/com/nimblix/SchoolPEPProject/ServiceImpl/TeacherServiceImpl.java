@@ -94,6 +94,7 @@ public class TeacherServiceImpl implements TeacherService {
         response.put(SchoolConstants.STATUS, SchoolConstants.STATUS_SUCCESS);
         response.put(SchoolConstants.MESSAGE, "Attendance marked successfully");
 
+        
         return ResponseEntity.ok(response);
     }
 }
