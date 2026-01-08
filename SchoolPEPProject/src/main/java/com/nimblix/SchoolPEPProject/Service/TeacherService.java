@@ -1,7 +1,9 @@
 package com.nimblix.SchoolPEPProject.Service;
 
+import org.springframework.http.ResponseEntity;
+
 import com.nimblix.SchoolPEPProject.Request.AttendanceRequest;
 
 public interface TeacherService {
-    String markAttendance(AttendanceRequest request, Long teacherId);
+	 ResponseEntity<?> markAttendance(String authHeader, AttendanceRequest request);
 }
